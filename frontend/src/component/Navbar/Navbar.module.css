@@ -1,0 +1,55 @@
+/* Navbar Height */
+.custom-navbar {
+  height: 18vh;
+}
+@media  screen and (min-width: 992px)  and (max-width: 1050px) {
+    .padding{
+        padding: 0 8px !important;
+    }
+    .list-unstyled{
+        justify-content:  start;
+        column-gap: 15px !important;
+    }
+    
+}
+/* Mobile Slide-in Nav */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 9vh;
+    left: -100%;
+    padding: 20px 0;
+    height: auto;
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  /* ✅ Force nav ul to be vertical on small screens */
+  .nav-links ul {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-links{
+     top: 79px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-links{
+    top: 103px;
+    width: 100%;
+  }
+  
+}

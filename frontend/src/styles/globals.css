@@ -1,0 +1,898 @@
+/* Navbar Height */
+
+.custom-navbar {
+  height: 18vh;
+}
+
+.auth-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/Background/4.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card p {
+  font-size: 14px;
+  color: rgb(129, 129, 129);
+}
+
+.auth-input {
+  background-color: #77ba0024;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+.auth-input:focus {
+  border: 1px solid var(--account-color);
+}
+
+.auth-button:focus {
+  border-color: var(--account-color);
+}
+
+.auth-footer a {
+  color: var(--account-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.auth-message {
+  background: #d3ff87;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1050px) {
+  .padding {
+    padding: 0 8px !important;
+  }
+  .list-unstyled {
+    justify-content: start;
+    column-gap: 15px !important;
+  }
+}
+/* Mobile Slide-in Nav */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 9vh;
+    left: -100%;
+    padding: 20px 0;
+    height: auto;
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  /* ✅ Force nav ul to be vertical on small screens */
+  .nav-links ul {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    top: 79px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-links {
+    top: 103px;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --account-color: #77ba00;
+}
+.top-header-wrapper {
+  background-color: #222;
+  color: white;
+}
+
+.top-header {
+  height: 9vh;
+}
+span,
+.stars,
+.role,
+.link,
+hr,
+.icons {
+  color: #77ba00;
+}
+.check {
+  background-color: var(--account-color);
+  width: 40px;
+  padding: 8px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+.accounts a {
+  width: 35px;
+  height: 35px;
+  background-color: var(--account-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.service-icons {
+  background-color: var(--account-color);
+  border: 2px solid var(--account-color);
+  border-radius: 50%;
+  color: #fff;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.myBtn {
+  background-color: var(--account-color);
+  font-size: 14px;
+  padding: 12px 30px;
+  border: 2px solid var(--account-color);
+  border-radius: 30px;
+  transition: background 0.5s all ease-in-out;
+}
+.globalBtn {
+  background-color: var(--account-color);
+  font-size: 14px;
+  padding: 12px 30px;
+  border: 0;
+  border-radius: 30px;
+  width: fit-content;
+  outline: 0;
+  transition: background 0.5s all ease-in-out;
+}
+.myBtn:hover,
+.accounts a:hover {
+  background-color: transparent;
+}
+.second-btn {
+  background-color: transparent;
+}
+.second-btn:hover {
+  background-color: var(--account-color) !important;
+}
+.globalBtn:hover {
+  background-color: black;
+}
+.spot-section {
+  background-color: #f6f6f6;
+}
+.room-link {
+  color: var(--account-color);
+  border-bottom: 1px solid var(--account-color);
+  font-size: 14px;
+}
+.subscribe-section {
+  height: 18vh;
+  background-color: var(--account-color);
+}
+.subscribe {
+  border: 2px solid white;
+  border-radius: 24px;
+  background-color: transparent;
+  padding: 10px 24px;
+}
+/* ProjectCompletion.css */
+
+.project-completion {
+  background: url("/assets/Background/2.avif") center center / cover no-repeat
+    fixed;
+
+  height: 50vh;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.project-completion h4 {
+  color: var(--account-color);
+  font-size: 3rem;
+}
+.project-completion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
+  z-index: -1;
+}
+.team-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.team-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img {
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.05);
+}
+
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--account-color);
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.team-card:hover .team-overlay {
+  transform: translateY(0);
+}
+
+.social-icons a {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--account-color);
+  color: var(--account-color);
+  background-color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #222;
+}
+.team-card p {
+  color: var(--account-color);
+}
+
+/* Reviews Section Styles  */
+.reviews-section {
+  margin-top: 50px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.reviews-section .overlay {
+  background-color: rgba(0, 0, 0, 0.76); /* dark transparent layer */
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.review-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.review-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #77ba00;
+}
+
+.review-message {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+.swiper-pagination {
+  margin-top: 30px; /* Adds spacing below the slider */
+  position: relative; /* Optional: allows precise control */
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff !important;
+  opacity: 1;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #77ba00 !important;
+  opacity: 1;
+  transform: scale(1.2); /* Makes the active one pop */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #c5f2784a;
+  padding: 30px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: #fff !important;
+  transition: background 0.2s ease-in-out;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #76ba008c;
+}
+/* Footer Styles  */
+.footer-section {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.footer-section .overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
+  padding: 50px 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section ul li:hover {
+  color: #77ba00;
+  cursor: pointer;
+}
+
+/* Banner Styles  */
+.banner-section {
+  position: relative;
+  height: 300px;
+  background-image: url("/assets/Background/1.avif");
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.banner-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 0;
+}
+/* Contact Form Styls  */
+.input-data {
+  border-radius: 0px !important;
+  padding: 12px 10px;
+  border: 1px solid #c1c1c149;
+}
+.input-data::placeholder {
+  color: #8686866c;
+}
+/* Map Styles */
+.map-section {
+  position: relative;
+  width: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 79, 0, 0.4); /* semi-transparent green */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* About Section */
+.about-section h6 {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-section p {
+  color: #848484;
+}
+
+/* Gallery Animation */
+.gallery-item {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Filter Buttons */
+.active-filter {
+  background-color: var(--account-color);
+  font-size: 14px;
+  padding: 12px 30px;
+  color: white;
+  outline: 0;
+  border: 1px solid var(--account-color);
+  border-radius: 30px;
+  width: fit-content;
+  transition: background 0.5s all ease-in-out;
+}
+
+.inactive-filter {
+  background-color: #fff;
+  padding: 12px 30px;
+  border: 1px solid rgba(154, 146, 146, 0.258);
+  color: var(--account-color);
+  outline: 0;
+  border-radius: 30px;
+  width: fit-content;
+  transition: background 0.5s all ease-in-out;
+}
+
+/* Room Cards */
+.room-card {
+  position: relative;
+}
+
+.room-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.room-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Icon Circle */
+.icon-circle {
+  background-color: white;
+  color: #77ba00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+.bookingForm label {
+  color: var(--account-color);
+}
+.hotel-room-section {
+  background: url("/assets/Background/rb.avif") center center / cover no-repeat;
+  padding: 30px;
+  position: relative;
+}
+.hotel-bg {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heading {
+  position: relative;
+  z-index: 2;
+}
+.slider-wrapper {
+  width: 100%;
+  padding: 30px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.room-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.underline-img {
+  margin-top: 10px;
+  width: 100px;
+}
+
+/* AdminSide bar  */
+/* === AdminSidebar Styles === */
+
+.admin-sidebar {
+  background-color: #212529; /* Bootstrap's bg-dark */
+  color: #fff;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.admin-profile h3 {
+  margin-top: 0.5rem;
+  color: var(--account-color);
+  margin-bottom: 0;
+}
+
+.admin-profile small {
+  color: #6c757d;
+}
+
+.admin-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-heading {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+/* ==== Sidebar Link Styles ==== */
+.side-link {
+  background-color: #8bb642;
+  margin: 20px 0 0 0;
+}
+
+/* Sidebar toggle (Booking, Rooms dropdown) */
+.sidebar-toggle {
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Slide-in animation for mobile sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 1050;
+  background-color: #343a40;
+  overflow-y: auto;
+  transition: transform 0.6s ease-in-out;
+}
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+/* Dropdown Content Animation */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.dropdown-show {
+  max-height: 500px; /* Enough to show all links */
+}
+
+.dropdown-hide {
+  max-height: 0;
+}
+
+/* Optional: Image styling */
+.profile-frame {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop fixed sidebar */
+.desktop-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+.input-focus-green:focus {
+  border-color: green !important;
+  box-shadow: none !important;
+}
+#room-input {
+  color: silver;
+}
+#room-input::placeholder {
+  color: rgba(192, 192, 192, 0.667);
+}
+
+/* booking section  */
+
+.booking-section h2 {
+  font-weight: bold;
+  color: var(--account-color);
+}
+
+.table th,
+.table td {
+  vertical-align: middle !important;
+}
+
+.btn-info {
+  background-color: #0dcaf0;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #31d2f2;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Ensure modal overlays properly */
+.modal {
+  display: block !important;
+  z-index: 1050;
+}
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.input-data:focus {
+  border-color: var(--account-color) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.25); /* optional soft glow */
+  outline: none; /* removes default outline */
+}
+
+.login {
+  background-color: white;
+  color: #5f9700 !important;
+}
+.login:hover {
+  color: white !important;
+}
+.padding {
+  padding: 10px 30px;
+}
+
+/* Rooms section  */
+@media (max-width: 992px) {
+  .custom-table-responsive {
+    margin: 0 20px;
+    overflow-x: auto;
+    position: relative;
+  }
+
+  .custom-table-width {
+    min-width: 900px;
+  }
+
+  /* Scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+  .custom-table-responsive::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 8px;
+  }
+
+  .custom-table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .custom-table-responsive::-webkit-scrollbar-thumb {
+    background-color: #77ba00;
+    border-radius: 10px;
+  }
+
+  .custom-table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #5f9700;
+  }
+}
+
+.custom-table-head {
+  background-color: #77ba00;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .booking-section {
+    padding: 1rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.icon-button svg {
+  font-size: 13px;
+}
+
+@media (min-width: 1400px) {
+  .myAbout {
+    max-width: 1320px;
+  }
+
+  .about-row > div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .top-header {
+    gap: 4px;
+    padding: 8px 0;
+    flex-direction: column;
+    height: auto !important;
+  }
+  .myBtn {
+    font-size: 10px;
+    padding: 12px 15px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+@media (min-width: 577px) {
+  .admin-mobile-navbar {
+    display: none !important;
+  }
+  .admin-desktop-sidebar {
+    display: block !important;
+  }
+  .admin-main {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+}
+@media (max-width: 576px) {
+  .admin-mobile-navbar {
+    display: flex !important;
+  }
+  .admin-desktop-sidebar {
+    display: none !important;
+  }
+  .add-room h1 {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-completion {
+    height: auto;
+  }
+  .subscribe-section {
+    text-align: center;
+    padding: 15px 0;
+    height: auto;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .booking-features h2 {
+    margin: 40px 0 0 0;
+  }
+}

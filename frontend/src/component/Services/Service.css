@@ -1,0 +1,30 @@
+.icon-box {
+  background-color: #77ba00;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #77ba00;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+.service-card:hover .icon-box {
+  background-color: white;
+  color: #77ba00;
+}
+.service-card p{
+    color: #888;
+    font-size: 14px;
+}
+@media (max-width: 576px) {
+  .service-card, .service-title {
+    padding: 0 20px !important;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center !important;
+  }
+  .service-card .icon-box {
+    margin: 0 auto;
+  }
+}
+

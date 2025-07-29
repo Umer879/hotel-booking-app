@@ -1,0 +1,87 @@
+.hero-slider {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.hero-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; /* remove extra space below hero */
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 820px;
+  z-index: 2;
+  width: 100%; /* make it responsive */
+}
+
+.hero-content h1 {
+  font-size: 50px;
+}
+
+.hero-content p {
+  font-size: 20px;
+}
+
+/* 🖥 Large Screens: Limit hero height */
+@media (min-width: 1300px) {
+  .hero-slider,
+  .hero-slide {
+    height: 800px;
+  }
+}
+
+/* 📱 Medium Devices */
+@media screen and (max-width: 900px) {
+  .hero-slider,
+  .hero-slide {
+    height: 60vh;
+  }
+
+  .hero-content {
+    width: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
+
+/* 📱 Small Devices */
+@media screen and (max-width: 576px) {
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+}
+
+/* 📱 Very Small Devices */
+@media screen and (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 18px;
+  }
+
+  .hero-content p {
+    font-size: 10px;
+  }
+}

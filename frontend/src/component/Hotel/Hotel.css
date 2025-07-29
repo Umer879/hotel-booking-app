@@ -1,0 +1,35 @@
+.hotel-room-section {
+background: url('/assets/Background/rb.avif') center center / cover no-repeat;
+  padding: 30px;
+  position: relative;
+}
+.hotel-bg{
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.heading{
+    position: relative;
+    z-index: 2;
+}
+.slider-wrapper {
+  width: 100%;
+  padding: 30px 0;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+.room-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.underline-img {
+  margin-top: 10px;
+  width: 100px;
+}
