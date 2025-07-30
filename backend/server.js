@@ -32,7 +32,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/hotelRooms', hotelRoomRoutes)
 
 // MongoDB Connection
-mongoose.connect(process.env.db_URI, {
+mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
