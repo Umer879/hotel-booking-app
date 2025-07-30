@@ -64,7 +64,7 @@ function Hotel() {
               <SwiperSlide key={index}>
                 <div className="room-card bg-white shadow-sm overflow-hidden">
                   <img
-                    src={`http://localhost:8000/uploads/${room.image}`}
+                    src={`https://hotel-booking-app-production-15c0.up.railway.app/uploads/${room.image}`}
                     alt={room.title}
                     className="w-100 room-img"
                     style={{ height: "230px", objectFit: "cover" }}
